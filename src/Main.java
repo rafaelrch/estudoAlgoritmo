@@ -109,6 +109,25 @@ public class Main {
         System.out.println("The area of the land is " + areaT);
         System.out.println("The value of the land is " + priceT);
 
+        System.out.println("--------------------------------------------------");
 
+        /* Example 7 | Make a program to read the measures of the base and height of a rectangle. Then display the
+of the area, perimeter and diagonal of this rectangle, to four decimal places*/
+
+        double baseR, heightR, areaR, perimeterR, diagonalR;
+
+        System.out.println("Enter the base of rectangle: ");
+        baseR = scanner.nextDouble();
+
+        System.out.println("Enter the height of rectangle: ");
+        heightR = scanner.nextDouble();
+
+        areaR = baseR * heightR;
+        perimeterR = (2 * baseR) + (2 * heightR);
+        diagonalR = Math.sqrt(Math.pow(baseR, 2) + Math.pow(heightR, 2));
+
+        System.out.printf("The area of rectangle is: %.4f\n", areaR);
+        System.out.printf("The perimeter of rectangle is: %.4f\n", perimeterR);
+        System.out.printf("The diagonal of rectangle is: %.4f\n", diagonalR);
     }
 }
