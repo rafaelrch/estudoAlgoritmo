@@ -84,6 +84,31 @@ public class Main {
         }
 
         System.out.println("The number max is: " + max);
+        System.out.println("-------------------------------------------");
+
+        /* Example 6 | Make a program to read the measurements of the width and length of a rectangular plot of land
+        to one decimal place, as well as the value of the square meter of the plot to two decimal places.
+        decimal place, as well as the value of the square meter of the plot to two decimal places. Then
+        the program should display the value of the area of the plot, as well as the value of the price of the plot,
+        both to two decimal places.*/
+
+        int widthT, lengthT, priceM, areaT, priceT;
+
+        System.out.println("Enter the width of the land ");
+        widthT = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Enter the length of the land: ");
+        lengthT = Integer.parseInt(scanner.nextLine());
+
+        System.out.println("Enter the value per square meter: ");
+        priceM = Integer.parseInt(scanner.nextLine());
+
+        areaT = widthT * lengthT;
+        priceT = priceM * areaT;
+
+        System.out.println("The area of the land is " + areaT);
+        System.out.println("The value of the land is " + priceT);
+
 
     }
 }
