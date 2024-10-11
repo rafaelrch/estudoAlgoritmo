@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 import java.util.Scanner;
 
 public class Main {
@@ -16,7 +14,7 @@ public class Main {
         String genero = "F";
 
         System.out.println("-----------------------------------------");
-        System.out.println("Produtc:");
+        System.out.println("Product:");
         System.out.println("O produto " + produto1 + " custa R$ " + preco1);
         System.out.println("O produto " + produto2 +  " custa R$ " + preco2);
         System.out.println(" ");
@@ -123,11 +121,46 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
         heightR = scanner.nextDouble();
 
         areaR = baseR * heightR;
-        perimeterR = (2 * baseR) + (2 * heightR);
+        perimeterR = 2 * (baseR + heightR);
         diagonalR = Math.sqrt(Math.pow(baseR, 2) + Math.pow(heightR, 2));
 
         System.out.printf("The area of rectangle is: %.4f\n", areaR);
         System.out.printf("The perimeter of rectangle is: %.4f\n", perimeterR);
         System.out.printf("The diagonal of rectangle is: %.4f\n", diagonalR);
+
+        System.out.println("--------------------------------------------------");
+
+        //Example 8
+
+        System.out.println("How many numbers do you want to enter? ");
+        int x = Integer.parseInt(scanner.nextLine());
+
+        int menor = Integer.MAX_VALUE;
+        int maior = Integer.MIN_VALUE;
+        int soma = 0;
+
+        for (int i = 0; i < x; i++){
+
+            System.out.println("Enter the number " + i + ": ");
+            int num = Integer.parseInt(scanner.nextLine());
+
+            if (num < menor){
+                menor = num;
+            }
+
+            if(num > maior){
+                maior = num;
+            }
+
+            soma += num;
+
+
+        }
+
+        double media = (double) soma / x;
+        System.out.println("O maior valor é " + maior);
+        System.out.println("O menor valor é " + menor);
+        System.out.println("A soma dos valores é " + soma);
+        System.out.println("A média é " + media);
     }
 }
