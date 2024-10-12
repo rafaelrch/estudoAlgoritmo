@@ -141,16 +141,54 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
         person1 = scanner.nextLine();
         System.out.printf("Age: ");
-        age1 = Integer.parseInt(scanner.nextLine());
+        age1 = scanner.nextInt();
 
         System.out.println("Data of second person: ");
         System.out.printf("Name: ");
         person2 = scanner.nextLine();
         System.out.printf("Age: ");
-        age2 = Integer.parseInt(scanner.nextLine());
+        age2 = scanner.nextInt();
 
         media = (age1 + age2) / 2;
 
-        System.out.printf("The media age de " + person1 + " and " + person2 + " is " + media);
+        System.out.println("The media age of " + person1 + " and " + person2 + " is " + media);
+
+        System.out.println("------------------------------------------------------");
+
+        // exercise 9 | sum
+
+        System.out.println("Type the value of l: ");
+        int l = scanner.nextInt();
+
+        System.out.println("Type the value of p: ");
+        int p = scanner.nextInt();
+
+        int summ = l + p;
+
+        System.out.println("The sum of numbers is " + summ);
+
+        System.out.println("------------------------------------------------------");
+
+        // exercise 10 | change for money
+        double troco = 0;
+
+        System.out.println("Preço unitario do produto: ");
+        double  precoUni = scanner.nextDouble();
+
+        System.out.println("Quantidade comprada: ");
+        double  qntd = scanner.nextDouble();
+
+        System.out.println("Dinheiro recebido: ");
+        double  dinRece = scanner.nextDouble();
+
+        troco = dinRece - (qntd * precoUni);
+
+        System.out.println("TROCO: R$" + troco);
+
+
+
+
+
+
     }
 }
