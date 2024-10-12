@@ -185,7 +185,18 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
         System.out.println("TROCO: R$" + troco);
 
+        System.out.println("------------------------------------------------------");
 
+        // exercise 11 | circle
+
+        double r, areaCircle;
+
+        System.out.println("Digite o valor do raio: ");
+        r = scanner.nextDouble();
+
+        areaCircle = Math.PI * Math.pow(r , 2);
+
+        System.out.printf("Area: %.3f\n ", areaCircle);
 
 
 
