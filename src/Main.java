@@ -132,35 +132,25 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
         //Example 8
 
-        System.out.println("How many numbers do you want to enter? ");
-        int x = Integer.parseInt(scanner.nextLine());
+        String person1, person2, person3;
+        int age1, age2;
+        double media;
 
-        int menor = Integer.MAX_VALUE;
-        int maior = Integer.MIN_VALUE;
-        int soma = 0;
+        System.out.println("Data of first person: ");
+        System.out.printf("Name: ");
 
-        for (int i = 0; i < x; i++){
+        person1 = scanner.nextLine();
+        System.out.printf("Age: ");
+        age1 = Integer.parseInt(scanner.nextLine());
 
-            System.out.println("Enter the number " + i + ": ");
-            int num = Integer.parseInt(scanner.nextLine());
+        System.out.println("Data of second person: ");
+        System.out.printf("Name: ");
+        person2 = scanner.nextLine();
+        System.out.printf("Age: ");
+        age2 = Integer.parseInt(scanner.nextLine());
 
-            if (num < menor){
-                menor = num;
-            }
+        media = (age1 + age2) / 2;
 
-            if(num > maior){
-                maior = num;
-            }
-
-            soma += num;
-
-
-        }
-
-        double media = (double) soma / x;
-        System.out.println("O maior valor é " + maior);
-        System.out.println("O menor valor é " + menor);
-        System.out.println("A soma dos valores é " + soma);
-        System.out.println("A média é " + media);
+        System.out.printf("The media age de " + person1 + " and " + person2 + " is " + media);
     }
 }
