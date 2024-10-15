@@ -198,8 +198,25 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
         System.out.printf("Area: %.3f\n ", areaCircle);
 
+        System.out.println("------------------------------------------------------");
+
+        // exercise 12 | payment
+
+        String name;
+        int value, hours, pay;
+
+        System.out.println("Name: ");
+        name = scanner.nextLine();
+
+        System.out.printf("value per hour: ");
+        value = scanner.nextInt();
+
+        System.out.printf("Hours worked : ");
+        hours = scanner.nextInt();
+
+        pay = value * hours;
 
 
-
+        System.out.println("The payment to " + name + " should be $" + pay );
     }
 }
