@@ -218,5 +218,22 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
 
         System.out.println("The payment to " + name + " should be $" + pay );
+
+        System.out.println("------------------------------------------------------");
+
+        // exercise 13 | consumption
+
+        int distance;
+        double fuel, consumeM;
+
+        System.out.println("Distance traveled: ");
+        distance = scanner.nextInt();
+
+        System.out.println("Spent fuel: ");
+        fuel = scanner.nextDouble();
+
+        consumeM = distance / fuel;
+
+        System.out.printf("Average consumption: %.3f", consumeM);
     }
 }
