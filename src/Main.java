@@ -261,5 +261,21 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
         System.out.printf("ÁREA DO QUADRADO = %.4f%n", areaQuadrado);
         System.out.printf("ÁREA DO TRIANGULO = %.4f%n", areaTriangulo);
         System.out.printf("ÁREA DO TRAPÉZIO = %.4f%n", areaTrapezio);
+
+        System.out.println("------------------------------------------------------");
+
+        // exercise 15 | Duration
+
+        int duration, hour, minute, second, resto;
+
+        System.out.println("Type the duration in seconds: ");
+        duration = scanner.nextInt();
+
+        hour =  duration / 3600;
+        resto = duration % 3600;
+        minute = resto / 60;
+        second = resto % 60;
+
+        System.out.println(hour + ":" + minute + ":" + second);
     }
 }
