@@ -235,5 +235,31 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
         consumeM = distance / fuel;
 
         System.out.printf("Average consumption: %.3f", consumeM);
+
+        System.out.println("------------------------------------------------------");
+
+        // exercise 14 | medidas |
+        //a) a área do quadrado que tem lado A
+        //b) a área do triângulo retângulo que tem base A e altura B
+        //c) a área do trapézio que tem bases A e B, e altura C
+
+        double medidaA, medidaB, medidaC, areaTriangulo, areaQuadrado, areaTrapezio;
+
+        System.out.println("Digite a medida A: ");
+        medidaA = scanner.nextDouble();
+
+        System.out.println("Digite a medida B: ");
+        medidaB = scanner.nextDouble();
+
+        System.out.println("Digite a medida C: ");
+        medidaC = scanner.nextDouble();
+
+        areaQuadrado = medidaA * medidaA;
+        areaTriangulo = (medidaA * medidaB) / 2;
+        areaTrapezio = ((medidaA + medidaB) * medidaC) / 2;
+
+        System.out.printf("ÁREA DO QUADRADO = %.4f%n", areaQuadrado);
+        System.out.printf("ÁREA DO TRIANGULO = %.4f%n", areaTriangulo);
+        System.out.printf("ÁREA DO TRAPÉZIO = %.4f%n", areaTrapezio);
     }
 }
