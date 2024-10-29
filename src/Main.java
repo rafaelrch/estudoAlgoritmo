@@ -277,5 +277,26 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
         second = resto % 60;
 
         System.out.println(hour + ":" + minute + ":" + second);
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 16 | Notas
+
+     double nota1, nota2, notaFinal;
+
+
+     System.out.println("Digite a primeira nota: ");
+     nota1 = scanner.nextDouble();
+
+     System.out.println("Digite a segunda nota: ");
+     nota2 = scanner.nextDouble();
+
+     notaFinal = nota1 + nota2;
+
+     if (notaFinal < 60.0){
+      System.out.println("REPROVADO");
+     }else{
+      System.out.println("APROVADO");
+     }
     }
 }
