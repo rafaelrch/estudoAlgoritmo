@@ -294,9 +294,39 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
      notaFinal = nota1 + nota2;
 
      if (notaFinal < 60.0){
+      System.out.printf("NOTA FINAL: " + notaFinal);
       System.out.println("REPROVADO");
      }else{
+      System.out.println("NOTA FINAL: " + notaFinal);
       System.out.println("APROVADO");
+     }
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 17 | Baskara
+
+     double a1,b1,c1,x1,x2,delta;
+
+     System.out.printf("Coeficiente a: \n");
+     a1 = scanner.nextDouble();
+
+     System.out.printf("Coeficiente b: \n");
+     b1 = scanner.nextDouble();
+
+     System.out.printf("Coeficiente c: \n");
+     c1 = scanner.nextDouble();
+
+     delta = Math.pow(b1, 2) - 4 * a1 *c1;
+
+     if(a1 == 0 || delta < 0) {
+      System.out.println("Não possui raizes reais");
+     }else{
+      x1 = (-b1 + Math.sqrt(delta) ) / (2*a1);
+      x2 = (-b1 - Math.sqrt(delta) ) / (2*a1);
+
+
+      System.out.printf("X1 = %.4f%n", x1);
+      System.out.printf("X2 = %.4f%n", x2);
      }
     }
 }
