@@ -353,5 +353,43 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
       System.out.println("MENOR: " + num03);
      }
 
+     System.out.println("------------------------------------------------------");
+
+     // exercise 19 | Dia da semana
+
+     int x;
+     String dia;
+
+     System.out.println("Dia: ");
+     x = scanner.nextInt();
+
+     switch (x){
+      case 1:
+       dia = "Segunda-feira";
+       break;
+      case 2:
+       dia = "Terça-feira";
+       break;
+      case 3:
+       dia = "Quarta-feira";
+       break;
+      case 4:
+       dia = "Quinta-feira";
+       break;
+      case 5:
+       dia = "Sexta-feira";
+       break;
+      case 6:
+       dia = "Sábado";
+       break;
+      case 7:
+       dia = "Domingo";
+       break;
+
+      default: dia = "Valor inválido";
+     }
+
+     System.out.println("Dia da semana: " + dia);
+
     }
 }
