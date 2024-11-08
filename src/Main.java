@@ -181,6 +181,7 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
         System.out.println("Dinheiro recebido: ");
         double  dinRece = scanner.nextDouble();
 
+
         troco = dinRece - (qntd * precoUni);
 
         System.out.println("TROCO: R$" + troco);
@@ -407,6 +408,34 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
       valorPago = (minutos - 100) * 2 + valorPago;
      }
 
-     System.out.printf("Valor a pagar: R$ %.2f", valorPago);
+     System.out.printf("Valor a pagar: R$ %.2f\n", valorPago);
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 21 | Troco verificada
+
+     double precoProduto, dinheiroRecebido, trocoDinheiro, falta;
+     int quantidade;
+
+     trocoDinheiro = 0;
+
+     System.out.println("Preço unitario do produto: ");
+     precoProduto = scanner.nextDouble();
+
+     System.out.println("Quantidade do produto: ");
+     quantidade = scanner.nextInt();
+
+     System.out.println("Dinheiro recebido: ");
+     dinheiroRecebido = scanner.nextDouble();
+
+     if( dinheiroRecebido < (precoProduto * quantidade) ){
+      falta = (precoProduto * quantidade) - dinheiroRecebido;
+      System.out.printf("FALTAM R$%.2f REAIS\n", falta);
+     }else {
+      trocoDinheiro = quantidade - (precoProduto * quantidade);
+      System.out.printf("TROCO: R$%.2f\n", trocoDinheiro);
+     }
+
+
     }
 }
