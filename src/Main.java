@@ -391,5 +391,22 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
      System.out.println("Dia da semana: " + dia);
 
+     System.out.println("------------------------------------------------------");
+
+     // exercise 20 | Operadora
+
+     int minutos;
+     double valorPago;
+
+     System.out.println("Escreva a quantidade de minutos: ");
+     minutos = scanner.nextInt();
+
+     valorPago = 50;
+
+     if(minutos > 100){
+      valorPago = (minutos - 100) * 2 + valorPago;
+     }
+
+     System.out.printf("Valor a pagar: R$ %.2f", valorPago);
     }
 }
