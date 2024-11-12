@@ -436,6 +436,22 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
       System.out.printf("TROCO: R$%.2f\n", trocoDinheiro);
      }
 
+     System.out.println("------------------------------------------------------");
+
+     // exercise 22 | Glicose
+
+     double medida;
+     System.out.println("Digite a medida da glicose: ");
+     medida = scanner.nextDouble();
+
+     if (medida <= 100){
+      System.out.println("Classificação: Normal ");
+     } else if ( medida > 100 && medida <= 140) {
+      System.out.println("Clasificação: Elevado");
+     }else{
+      System.out.println("Diabetes");
+     }
+
 
     }
 }
