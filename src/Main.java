@@ -472,7 +472,28 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
       maiorDistancia = distancia3;
      }
 
-     System.out.printf("MAIOR DISTANCIA: %.2f", maiorDistancia);
+     System.out.printf("MAIOR DISTANCIA: %.2f\n", maiorDistancia);
 
+     System.out.println("------------------------------------------------------");
+
+     // exercise 24 | Temperatura
+
+     String temp;
+     double f,c;
+
+     System.out.println("Temperatura em qual escala (C/F): ");
+     temp = scanner.nextLine();
+
+     if (temp.equals("F")) {
+      System.out.println("Digite a temperatura em Fahrenheit: ");
+      f = scanner.nextDouble();
+      c = 5.0 / 9.0 * (f - 32);
+      System.out.printf("Temperatura equivalente em Celsius: %.2f", c);
+     }else{
+      System.out.println("Digite a temperatura em Celsius: ");
+      c = scanner.nextDouble();
+      f = 9.0 * c / 5.0 + 32;
+      System.out.printf("Temperatura equivalente em Fahrenheit: %.2f", f);
+     }
     }
 }
