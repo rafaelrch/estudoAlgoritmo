@@ -493,7 +493,51 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
       System.out.println("Digite a temperatura em Celsius: ");
       c = scanner.nextDouble();
       f = 9.0 * c / 5.0 + 32;
-      System.out.printf("Temperatura equivalente em Fahrenheit: %.2f", f);
+      System.out.printf("Temperatura equivalente em Fahrenheit: %.2f\n", f);
      }
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 25 | Lanchonete
+
+     int codigo1, qntdComprada1;
+     double valorPagar1, precoProduto1;
+
+     valorPagar1 = 0.00;
+     precoProduto1 = 0.00;
+
+     System.out.println("Codigo do produto: ");
+     codigo1 = scanner.nextInt();
+
+     System.out.println("Quantidade comprada: ");
+     qntdComprada1 = scanner.nextInt();
+
+     switch(codigo1){
+      case 1:
+       precoProduto1 = 5.00;
+       valorPagar1 = precoProduto1 * qntdComprada1;
+       break;
+      case 2:
+       precoProduto1 = 3.50;
+       valorPagar1 =precoProduto1 * qntdComprada1;
+       break;
+      case 3:
+       precoProduto1 = 4.80;
+       valorPagar1 =precoProduto1 * qntdComprada1;
+       break;
+      case 4:
+       precoProduto1 = 8.90;
+       valorPagar1 =precoProduto1 * qntdComprada1;
+       break;
+      case 5:
+       precoProduto1 = 7.32;
+       valorPagar1 =precoProduto1 * qntdComprada1;
+       break;
+      default:
+       System.out.println("Código de produto inválido.");
+       return;
+     }
+
+     System.out.printf("Valor a pagar: %.2f\n", valorPagar1);
     }
 }
