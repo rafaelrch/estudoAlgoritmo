@@ -452,6 +452,27 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
       System.out.println("Diabetes");
      }
 
+     System.out.println("------------------------------------------------------");
+
+     // exercise 23 | Dardo
+
+     double distancia1, distancia2, distancia3, maiorDistancia;
+     maiorDistancia = 0;
+
+     System.out.println("Digite as três distâncias: ");
+     distancia1 = scanner.nextDouble();
+     distancia2 = scanner.nextDouble();
+     distancia3 = scanner.nextDouble();
+
+     if (distancia1 > distancia2 && distancia1 >distancia3){
+      maiorDistancia = distancia1;
+     }else if(distancia2 > distancia3){
+      maiorDistancia = distancia2;
+     }else{
+      maiorDistancia = distancia3;
+     }
+
+     System.out.printf("MAIOR DISTANCIA: %.2f", maiorDistancia);
 
     }
 }
