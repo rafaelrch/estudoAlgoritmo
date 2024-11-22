@@ -555,6 +555,50 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
       System.out.println("Não sao múltiplos");
      }
 
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 27 | Aumento salarial
+
+     double salario, novoSalario, aumento;
+
+     System.out.println("Digite o salário da pessoa:");
+     salario = scanner.nextDouble();
+
+     if(salario <= 1000) {
+
+      aumento = (salario * 20) / 100;
+      novoSalario = aumento + salario;
+
+      System.out.printf("Novo salário: R$ %.2f\n", novoSalario);
+      System.out.printf("Aumento: R$ %.2f\n", aumento);
+      System.out.println("Porcentagem: 20%");
+     } else if (salario > 1000 && salario <= 3000 ) {
+
+      aumento = (salario * 15) / 100;
+      novoSalario = aumento + salario;
+
+      System.out.printf("Novo salário: R$ %.2f\n", novoSalario);
+      System.out.printf("Aumento: R$ %.2f\n", aumento);
+      System.out.println("Porcentagem: 15%");
+     } else if (salario > 3000 && salario <= 8000) {
+
+      aumento = (salario * 10) / 100;
+      novoSalario = aumento + salario;
+
+      System.out.printf("Novo salário: R$ %.2f\n", novoSalario);
+      System.out.printf("Aumento: R$ %.2f\n", aumento);
+      System.out.println("Porcentagem: 10%");
+     }else{
+
+      aumento = (salario * 5) / 100;
+      novoSalario = aumento + salario;
+
+      System.out.printf("Novo salário: R$ %.2f\n", novoSalario);
+      System.out.printf("Aumento: R$ %.2f\n", aumento);
+      System.out.printf("Porcentagem: 5%");
+     }
+
     }
 
 
