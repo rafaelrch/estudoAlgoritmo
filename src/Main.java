@@ -596,8 +596,26 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
       System.out.printf("Novo salário: R$ %.2f\n", novoSalario);
       System.out.printf("Aumento: R$ %.2f\n", aumento);
-      System.out.printf("Porcentagem: 5%");
+      System.out.printf("Porcentagem: 5%\n");
      }
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 28 | Hora inicial e final
+
+     int horaInicial, horaFinal, duracaoHoras;
+
+     System.out.printf("Hora inicial: \n");
+     horaInicial = scanner.nextInt();
+     System.out.printf("Hora final: \n");
+     horaFinal = scanner.nextInt();
+
+     duracaoHoras = (24 - horaInicial) + horaFinal;
+     System.out.println("O JOGO DUROU " + duracaoHoras + " HORAS");
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 28 | Hora inicial e final
 
     }
 
