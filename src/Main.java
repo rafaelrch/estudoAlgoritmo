@@ -539,5 +539,23 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
      }
 
      System.out.printf("Valor a pagar: %.2f\n", valorPagar1);
+
+     System.out.println("------------------------------------------------------");
+
+     // exercise 26 | Múltiplos
+
+     int numero1, numero2;
+     System.out.println("Digite dois números inteiro:");
+     numero1 = scanner.nextInt();
+     numero2 = scanner.nextInt();
+
+     if (numero1 % numero2 == 0 || numero2 % numero1 == 0){
+      System.out.println("São múltiplos");
+     }else {
+      System.out.println("Não sao múltiplos");
+     }
+
     }
+
+
 }
