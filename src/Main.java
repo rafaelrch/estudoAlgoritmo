@@ -658,5 +658,26 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
   }
 
   System.out.println("SOMA: " + soma);
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 31 | Crescente e decrescente
+
+  int q1,w1;
+
+  System.out.println("Digite dois numeros: ");
+  q1 = scanner.nextInt();
+  w1 = scanner.nextInt();
+
+  while (q1 != w1){
+   if (q1 < w1){
+    System.out.println("CRESCENTE");
+   }else{
+    System.out.println("DECRESCENTE");
+   }
+   System.out.println("Digite outros dois numeros: ");
+   q1 = scanner.nextInt();
+   w1 = scanner.nextInt();
+  }
  }
 }
