@@ -640,5 +640,23 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
   } else {
    System.out.println("Eixo X");
   }
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 30 | Estrutura repetitiva
+
+  int q,soma;
+  System.out.println("Digite o primeiro numero: ");
+  q = scanner.nextInt();
+
+  soma = 0;
+
+  while (q != 0){
+   soma += q;
+   System.out.println("Digite outro numero:");
+   q = scanner.nextInt();
+  }
+
+  System.out.println("SOMA: " + soma);
  }
 }
