@@ -679,5 +679,32 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
    q1 = scanner.nextInt();
    w1 = scanner.nextInt();
   }
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 32 | Media idade
+
+  int idades,somas, cont;
+  double mediaIdade;
+
+  cont = 0;
+  somas = 0;
+
+  System.out.println("Digite as idades: ");
+  idades = scanner.nextInt();
+
+  while (idades > 0){
+   cont += 1;
+   somas += idades;
+   idades = scanner.nextInt();
+  }
+
+  if (cont == 0){
+   System.out.println("IMPOSSIVEL CALCULAR");
+  }else {
+   mediaIdade = somas / cont;
+   System.out.printf("MEDIA = %.2f\n", mediaIdade);
+  }
+
  }
 }
