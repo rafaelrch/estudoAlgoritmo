@@ -750,6 +750,52 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
   mediaAluno = (nota1Aluno + nota2Aluno) / 2;
   System.out.println("MEDIA = " + mediaAluno);
 
+  System.out.println("------------------------------------------------------");
+
+  // exercise 35 | Combustivel
+
+  int alcoolPosto, alcoolPostoSoma, gasolinaPosto, gasolinaPostoSoma, diesel, dieselSoma, fim, codigoPosto;
+  alcoolPosto = 1;
+  gasolinaPosto = 2;
+  diesel =3;
+  fim = 4;
+
+  alcoolPostoSoma = 0;
+  gasolinaPostoSoma = 0;
+  dieselSoma = 0;
+
+  System.out.println("Informe um codigo (1, 2, 3) ou 4 para parar: ");
+  codigoPosto = scanner.nextInt();
+
+  while (codigoPosto != fim){
+   System.out.println("Informe um codigo (1, 2, 3) ou 4 para parar: ");
+   codigoPosto = scanner.nextInt();
+   if(codigoPosto > 0 && codigoPosto < 4){
+    switch (codigoPosto){
+     case 1:
+      alcoolPostoSoma += 1;
+      break;
+     case 2:
+      gasolinaPostoSoma += 1;
+      break;
+     case 3:
+      dieselSoma += 1;
+      break;
+    }
+   }
+
+
+  }
+
+   System.out.println("MUITO OBRIGADO");
+
+
+  System.out.println("Alcool: " + alcoolPostoSoma);
+  System.out.println("Gasolina: " + gasolinaPostoSoma);
+  System.out.println("Diesel: " + dieselSoma);
+
+
+
 
  }
 }
