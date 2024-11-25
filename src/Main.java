@@ -727,7 +727,29 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
   System.out.println("------------------------------------------------------");
 
-  // exercise 33 | Senha
+  // exercise 34 | Validação de nota
+
+  double nota1Aluno, nota2Aluno, mediaAluno;
+
+  System.out.printf("Digite a primeira nota: ");
+  nota1Aluno = scanner.nextDouble();
+
+  while (nota1Aluno < 0 || nota1Aluno > 10){
+   System.out.printf("Valor inválido! tente novamente: ");
+   nota1Aluno = scanner.nextDouble();
+  }
+
+  System.out.printf("Digite a segunda nota: ");
+  nota2Aluno = scanner.nextDouble();
+
+  while (nota2Aluno < 0 || nota2Aluno > 10){
+   System.out.printf("Valor inválido! tente novamente: ");
+   nota2Aluno = scanner.nextDouble();
+  }
+
+  mediaAluno = (nota1Aluno + nota2Aluno) / 2;
+  System.out.println("MEDIA = " + mediaAluno);
+
 
  }
 }
