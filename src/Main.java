@@ -706,5 +706,28 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
    System.out.printf("MEDIA = %.2f\n", mediaIdade);
   }
 
+  System.out.println("------------------------------------------------------");
+
+  // exercise 33 | Senha
+
+  int senha,senhaAcesso;
+
+  System.out.println("Crie uma senha: ");
+  senha = scanner.nextInt();
+
+  System.out.println("Digite uma senha para acessar: ");
+  senhaAcesso = scanner.nextInt();
+
+  while (senhaAcesso != senha){
+   System.out.println("Senha Invalida! Tente novamente:");
+   senhaAcesso = scanner.nextInt();
+  }
+
+  System.out.println("ACESSO PERMETIDO!");
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 33 | Senha
+
  }
 }
