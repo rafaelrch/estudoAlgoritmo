@@ -795,7 +795,26 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
   System.out.println("Diesel: " + dieselSoma);
 
 
+  System.out.println("------------------------------------------------------");
 
+  // exercise 36 | Pares consecutivos
 
+  int somaNumeros, numInteiro;
+  somaNumeros = 0;
+
+  System.out.printf("Digite um número inteiro: ");
+  numInteiro = scanner.nextInt();
+
+  while(numInteiro != 0){
+   if(numInteiro % 2 != 0){
+    numInteiro++;
+   }
+
+   somaNumeros = 5 * numInteiro + 20;
+   System.out.printf("SOMA = %d\n", somaNumeros);
+
+   System.out.printf("Digite um número inteiro: ");
+   numInteiro = scanner.nextInt();
+  }
  }
 }
