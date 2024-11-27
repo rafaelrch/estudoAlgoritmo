@@ -827,7 +827,7 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
   System.out.printf("Quantos numeros serão digitados: ");
   digitado = scanner.nextInt();
 
-  for (int i = 0; i <= digitado ; i++){
+  for (int i = 1; i <= digitado ; i++){
    System.out.printf("Digite um numero: ");
    digitado = scanner.nextInt();
    somaDigitados += digitado;
@@ -848,6 +848,31 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
    multiplicacao = nTabuada * i;
    System.out.println(nTabuada + " x " + i + " = " + multiplicacao);
   }
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 39 | soma de impares
+
+  int nuumero1, nuumero2, somasImpares, troca;
+
+  System.out.println("Digite dois numero: ");
+  nuumero1 = scanner.nextInt();
+  nuumero2 = scanner.nextInt();
+
+  if (nuumero1 > nuumero2){
+   troca = nuumero1;
+   nuumero1 = nuumero2;
+   nuumero2 = troca;
+   }
+
+  somasImpares = 0;
+  for(int i = nuumero1 + 1; i < nuumero2 ;i++){
+   if (i % 2 !=0){
+    somasImpares += 1;
+   }
+  }
+
+  System.out.println("SOMA DOS IMPARES = " + somasImpares);
 
  }
 }
