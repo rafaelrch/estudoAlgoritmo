@@ -816,5 +816,38 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
    System.out.printf("Digite um número inteiro: ");
    numInteiro = scanner.nextInt();
   }
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 37 | Estrutura for  numeros digitados
+
+  int digitado, somaDigitados;
+  somaDigitados = 0;
+
+  System.out.printf("Quantos numeros serão digitados: ");
+  digitado = scanner.nextInt();
+
+  for (int i = 0; i <= digitado ; i++){
+   System.out.printf("Digite um numero: ");
+   digitado = scanner.nextInt();
+   somaDigitados += digitado;
+  }
+
+  System.out.println("SOMA = " + somaDigitados);
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 38 | Tabuada
+
+  int nTabuada, multiplicacao;
+
+  System.out.printf("Deseja a tabuada para qual valor? ");
+  nTabuada = scanner.nextInt();
+
+  for (int i = 1; i <= 10; i++){
+   multiplicacao = nTabuada * i;
+   System.out.println(nTabuada + " x " + i + " = " + multiplicacao);
+  }
+
  }
 }
