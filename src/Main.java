@@ -891,5 +891,20 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
    System.out.printf("Deseja repetir (s/n)? ");
    repetir = scanner.next().charAt(0);
   }while (repetir == 's' || repetir == 'S');
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 41 | Sequencia impares
+  int xInteiro;
+
+  System.out.printf("Digite o valor de X: ");
+  xInteiro = scanner.nextInt();
+
+  for (int i = 1; i <= xInteiro; i++){
+   if (i % 2 != 0){
+    System.out.println(i);
+   }
+  }
+
  }
 }
