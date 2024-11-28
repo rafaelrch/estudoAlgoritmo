@@ -874,5 +874,22 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
   System.out.println("SOMA DOS IMPARES = " + somasImpares);
 
+  System.out.println("------------------------------------------------------");
+
+  // exercise 40 | do-while
+
+  double celsius, faren;
+  char repetir;
+
+  do {
+   System.out.printf("Digite a temperatura em Celsius: ");
+   celsius = scanner.nextDouble();
+
+   faren = (9 * celsius) / 5 + 32;
+   System.out.printf("Equivalente em Farenheit: %.1f\n", faren);
+
+   System.out.printf("Deseja repetir (s/n)? ");
+   repetir = scanner.next().charAt(0);
+  }while (repetir == 's' || repetir == 'S');
  }
 }
