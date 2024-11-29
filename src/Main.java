@@ -906,5 +906,30 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
    }
   }
 
+  System.out.println("------------------------------------------------------");
+
+  // exercise 42 | Sequencia impares
+
+  int z, s, dentro, fora;
+  dentro = 0;
+  fora = 0;
+
+  System.out.println("Quantos numeros vc vai digitar? ");
+  z = scanner.nextInt();
+
+  for (int i = 1; i <= z; i++){
+   System.out.println("Digite um numero: ");
+   s = scanner.nextInt();
+
+   if(s >= 10 && s <= 20){
+    dentro += 1;
+   }else{
+    fora += 1;
+   }
+
+  }
+  System.out.println(dentro + " DENTRO");
+  System.out.println(fora + " FORA");
+
  }
 }
