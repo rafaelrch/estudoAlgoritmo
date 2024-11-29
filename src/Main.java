@@ -908,7 +908,7 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
 
   System.out.println("------------------------------------------------------");
 
-  // exercise 42 | Sequencia impares
+  // exercise 42 | Dentro e fora
 
   int z, s, dentro, fora;
   dentro = 0;
@@ -930,6 +930,33 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
   }
   System.out.println(dentro + " DENTRO");
   System.out.println(fora + " FORA");
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 43 | Par e Impar
+
+  int nextNumero, xDigitado;
+
+  System.out.println("Quantos numeros serão digitados: ");
+  xDigitado = scanner.nextInt();
+
+  for (int i = 1; i <= xDigitado; i++){
+   System.out.printf("Digite um numero: ");
+   nextNumero = scanner.nextInt();
+
+   if (nextNumero < 0 && nextNumero % 2 != 0){
+    System.out.println("IMPAR NEGATIVO");
+   }else if(nextNumero < 0 && nextNumero % 2 == 0){
+    System.out.println("PAR NEGATIVO");
+   }else if(nextNumero > 0 && nextNumero % 2 != 0){
+    System.out.println("IMPAR POSITIVO");
+   }else if(nextNumero > 0 && nextNumero % 2 == 0){
+    System.out.println("PAR POSITIVO");
+   }else{
+    System.out.println("NULO");
+   }
+  }
+
 
  }
 }
