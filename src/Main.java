@@ -957,6 +957,58 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
    }
   }
 
+  System.out.println("------------------------------------------------------");
+
+  // exercise 44 | Media ponderada
+
+  int casosDigitados, peso1, peso2, peso3;
+  double mediaPonderada, t1, t2, t3;
+
+  peso1 = 2;
+  peso2 = 3;
+  peso3 = 5;
+
+
+  System.out.printf("Quantos casos voce vai digitar? ");
+  casosDigitados = scanner.nextInt();
+
+  for(int i = 1; i <= casosDigitados; i++){
+   System.out.println("Digite tres numeros ");
+   t1 = scanner.nextDouble();
+   t2 = scanner.nextDouble();
+   t3 = scanner.nextDouble();
+
+   mediaPonderada = (t1 * peso1 + t2 * peso2 + t3 * peso3)  / (peso1 + peso2 + peso3);
+
+   System.out.printf("MEDIA = %.1f%n", mediaPonderada);
+  }
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 45 | Divisão
+
+  int casosDigitados2, numerador, denominador;
+  double divisao;
+
+  System.out.printf("Quantos casos vc vai digitar? ");
+  casosDigitados2 = scanner.nextInt();
+
+  for (int i = 1; i <= casosDigitados2; i++){
+   System.out.println("Digite o numerador: ");
+   numerador = scanner.nextInt();
+   System.out.println("Digite o denominador: ");
+   denominador = scanner.nextInt();
+
+   if(numerador < 0 || numerador < denominador){
+    System.out.println("DIVISÃO IMPOSSÍVEL");
+   }else {
+    divisao = numerador / denominador;
+
+    System.out.println("DIVISÃO = " + divisao);
+
+   }
+
+  }
 
  }
 }
