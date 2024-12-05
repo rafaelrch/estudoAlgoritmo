@@ -1060,6 +1060,25 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
   System.out.printf("Percentual de ratos: %.2f\n" ,percentualR);
   System.out.printf("Percentual de sapos: %.2f\n" ,percentualS);
 
+  System.out.println("------------------------------------------------------");
+
+  // exercise 47 | Fatorial
+
+  int fatorial, mg;
+
+  System.out.println("Digite o valor de M: ");
+  m = scanner.nextInt();
+
+  fatorial = 1;
+
+  for(int i = 1; i <= m; i++){
+
+   fatorial *= i;
+
+  }
+
+  System.out.println("FATORIAL: " + fatorial);
+
 
  }
 }
