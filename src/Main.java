@@ -1007,8 +1007,59 @@ of the area, perimeter and diagonal of this rectangle, to four decimal places*/
     System.out.println("DIVISÃO = " + divisao);
 
    }
+  }
+
+  System.out.println("------------------------------------------------------");
+
+  // exercise 46 | EXPERIMENTO
+
+  int numeroDeCasos, qntdCobaias, totalCobaias, sapo, rato, coelho;
+  double percentualC, percentualS, percentualR;
+  char tipoCobaia;
+
+  sapo = 0;
+  rato = 0;
+  coelho = 0;
+  totalCobaias = 0;
+
+  System.out.printf("Quantos casos de teste serao digitados? ");
+  numeroDeCasos = scanner.nextInt();
+
+  for (int i = 1; i <= numeroDeCasos; i++){
+   System.out.printf("Quantidade de cobaias: ");
+   qntdCobaias = scanner.nextInt();
+   System.out.printf("Tipo de cobaia (S,C,R): ");
+   tipoCobaia = scanner.next().charAt(0);
+
+   switch (tipoCobaia){
+    case 'S':
+     sapo += qntdCobaias;
+     break;
+    case 'C':
+     coelho += qntdCobaias;
+     break;
+    case 'R':
+     rato += qntdCobaias;
+     break;
+   }
+
+   totalCobaias += qntdCobaias;
 
   }
+
+  percentualS = ((double)sapo / totalCobaias) * 100;
+  percentualR = ((double)rato / totalCobaias) * 100;
+  percentualC = ((double)coelho / totalCobaias) * 100;
+
+  System.out.println("RELATORIO FINAL:");
+  System.out.printf("Total: %d cobaias\n", totalCobaias);
+  System.out.printf("Total de coelhos: %d\n", coelho);
+  System.out.printf("Total de ratos: %d\n", rato);
+  System.out.printf("Total de sapos: %d\n", sapo);
+  System.out.printf("Percentual de coelhos: %.2f\n" ,percentualC);
+  System.out.printf("Percentual de ratos: %.2f\n" ,percentualR);
+  System.out.printf("Percentual de sapos: %.2f\n" ,percentualS);
+
 
  }
 }
